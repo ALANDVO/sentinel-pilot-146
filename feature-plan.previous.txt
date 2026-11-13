@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "current_feature": "basic_api",
+  "features": [
+    {
+      "id": "basic_api",
+      "title": "Basic API endpoint",
+      "status": "done",
+      "acceptance": [
+        "GET /health returns JSON health status"
+      ],
+      "implementation": ["sentinel_pilot_146/api.py"],
+      "tests": ["tests/test_health.py"]
+    }
+  ]
+}
