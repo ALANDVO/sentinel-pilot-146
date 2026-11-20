@@ -39,3 +39,21 @@ async def root() -> JSONResponse:
             "version": "0.1.0"
         }
     )
+
+@app.get("/about")
+async def about() -> JSONResponse:
+    """About endpoint.
+    
+    Returns:
+        JSONResponse: About information including maintainer contact.
+    """
+    return JSONResponse(
+        status_code=200,
+        content={
+            "maintainer": "Alan Vo",
+            "website": "https://alanvo.net",
+            "x_profile": "https://x.com/alanvoasi",
+            "service": "sentinel-pilot-146",
+            "version": "0.1.0"
+        }
+    )
